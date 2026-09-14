@@ -10,16 +10,15 @@ import pandas as pd
 import requests
 import streamlit as st
 
-st.set_page_config(
-    page_title="MyScholar Operation Center",
-    page_icon="myscholar_oc_favicon_32.png",
-    layout="wide",
-)
+
 
 # 1. Page Configuration optimized for mobile viewport
+import streamlit as st
+from pathlib import Path
+
 st.set_page_config(
     page_title="MyScholar Operation Center",
-    page_icon="favicon.png",
+    page_icon=str(Path(__file__).parent / "myscholar_oc_favicon_32.png"),
     layout="wide",
     initial_sidebar_state="expanded",
 )
