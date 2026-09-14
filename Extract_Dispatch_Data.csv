@@ -1,5 +1,4 @@
 ﻿Group,Date,School Name,Teacher,Task,Title/Panitia,Sample,Qty,#Delivery,Remark,Route
-,2026-09-14,Sains Sembrong,Sabarina,Pending,BIO,,,0,,
 A,,Dato Hj Talib Karim,Cikgu Zahara,Delivery,SJH1_MTP,,10,,,A150
 A,,Seri Tanjung,Cikgu Che Aziz,Return,BM1_NOTA,,-15,,,A400
 B,,Tun Syed Zahiruddin,Cikgu Zubaidah,Delivery,PA1_MTP,1,14,,NO STOCK,B100
@@ -25,10 +24,10 @@ C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH3_MTP,,,,,C350
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH3_MTP,,,,,C350
 C,,Tinggi Segamat,Cikgu Khairus,Payment,SJH1_MTP,,,,,C600
 C,,Tinggi Segamat,Cikgu Khairus,Return,SJH1_MTP,,,,,C600
-C,,Tinggi Segamat,Cikgu Effa,Payment,SJH3_MTP,,,,,C600
-C,,Tinggi Segamat,Cikgu Effa,Return,SJH3_MTP,,,,,C600
-C,,Tinggi Segamat,Cikgu Effa,Payment,SJH3_MTP,,,,,C600
-C,,Tinggi Segamat,Cikgu Effa,Return,SJH3_MTP,,,,,C600
+C,,Tinggi Segamat,Cikgu Khairus,Payment,SJH3_MTP,,,,,C600
+C,,Tinggi Segamat,Cikgu Khairus,Return,SJH3_MTP,,,,,C600
+C,,Tinggi Segamat,Cikgu Khairus,Payment,SJH3_MTP,,,,,C600
+C,,Tinggi Segamat,Cikgu Khairus,Return,SJH3_MTP,,,,,C600
 D,,Bukit Gambir,Cikgu Erna,Payment,SJH1_MTP,,,,,D200
 D,,Ledang,Cikgu Khursiah,Return,BM1_NOTA,,-3,,,D400
 D,,STMI,Cikgu Hidayah,Return,BM1_NOTA,,-2,,,D450
@@ -52,6 +51,7 @@ G,2026-09-11,Sains Johor,Pn Farhana,Deliver,FIZ,,1.0,1#,,G325
 G,2026-09-11,Sains Johor,Pn Sara,Deliver,KIMIA,,1.0,1#,,G325
 G,,Tun Hussein Onn,Cikgu Zalina,Payment,PA1_MTP,,,,,G340
 G,2026-09-10,Taman Seri Kluang,Pejabat,Cheque,GKT,,,0,,G350
+G,2026-09-14,Sains Sembrong,Sabarina,Pending,BIO,,,0,,G475
 G,2026-09-11,Sains Sembrong,Pn Rohaiza,Deliver,FIZ,,1.0,1#,,G475
 G,2026-09-11,Sains Sembrong,Taufik,Pending,PSV,,,0,,G475
 G,,Haji Hassan Yunus,Cikgu Norini,Return,MUET_THEMA,,-1,,,G550
@@ -71,12 +71,12 @@ I,,Bandar Kota Tinggi,Cikgu Hazura,Payment,PA1_ESEI,,,,,I450
 I,,Bandar Kota Tinggi,Cikgu Hazura,Payment,PA1_MTP,,,,,I450
 I,,Bandar Kota Tinggi,Cikgu Hazura,Payment,PA1_NOTA,,,,,I450
 I,,Ulu Tiram,Cikgu Miza,Delivery,MUET_MTP,,60,,,I550
-J,2026-09-10,Taman Universiti,Pejabat,Cheque,,,,0,,J125
 J,,Maktab SAB,Cikgu Nordiana,Delivery,MUET_MTP,1,15,,,J450
 J,,IPGKTI JAB. ILMU PENDIDIKAN,ENCIK MOHAMAD DAUD,Return,PENULISAN,,-16,,,J530
 J,,IPGKTI JABATAN BAHASA,DR HAFIZ,Delivery,ENGLISH,,100,,NO STOCK,J530
 J,,IPGKTI JABATAN ILMU PENDIDIKAN,PUAN NOR MALISSA,Delivery,PEDAGOGI,,45,,NO STOCK,J530
 J,2026-09-14,Tun Syed Nasir,Aqilah,Pending,PSV,,,0,,J610
+K,2026-09-14,Taman Seri Saujana,Izza,Pending,PSV,,,0,K,K210
 K,,Pasir Gudang 2,Cikgu Sumar,Delivery,PA1_MTP,,2,,NO STOCK,K425
 L,,Agama Bandar Penawar,Cikgu Haliza,Return,MUET_THEMA,,-1,,,L250
 L,,Agama Bandar Penawar,Cikgu Rozainah @ Cikgu Ann,Return,PA1_ESEI,,-1,,,L250
@@ -86,4 +86,4 @@ L,,Agama Bandar Penawar,Cikgu Faizah,Payment,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-09-14 17:00:50
+# Last Sync Check: 2026-09-14 17:30:43
