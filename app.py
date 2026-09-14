@@ -986,6 +986,8 @@ elif main_menu == '👤 2. Customer Transaction Analysis':
   )
 
 
+  ALL_SUBJECTS = 'All Subjects (Combined)'
+
   col1, col2, col3 = st.columns(3)
 
   with col1:
@@ -995,35 +997,32 @@ elif main_menu == '👤 2. Customer Transaction Analysis':
 
   with col2:
     if selected_school and not master_sales_df.empty:
-      sub_subj_df = master_sales_df[
+      sch_df = master_sales_df[
           master_sales_df['School_Name'] == selected_school
       ]
-      subjects = sorted(sub_subj_df['Subject'].unique().tolist())
-    else:
-      subjects = []
-
-    default_subj_idx = 0
-
-    selected_subject = st.selectbox(
-        '2. Subject', [''] + subjects, index=default_subj_idx
-    )
-
-  with col3:
-    if selected_school and selected_subject and not master_sales_df.empty:
-      sub_t_df = master_sales_df[
-          (master_sales_df['School_Name'] == selected_school)
-          & (master_sales_df['Subject'] == selected_subject)
-      ]
       teachers = sorted(
-          [t for t in sub_t_df['Teacher'].unique() if t and t != 'N/A']
+          [t for t in sch_df['Teacher'].unique() if t and t != 'N/A']
       )
     else:
       teachers = []
 
-    default_teach_idx = 0
-
     selected_teacher = st.selectbox(
-        '3. Teacher Name', [''] + teachers, index=default_teach_idx
+        '2. Teacher Name', [''] + teachers, index=0
+    )
+
+  with col3:
+    if selected_school and not master_sales_df.empty:
+      subj_df = master_sales_df[
+          master_sales_df['School_Name'] == selected_school
+      ]
+      if selected_teacher:
+        subj_df = subj_df[subj_df['Teacher'] == selected_teacher]
+      subjects = sorted(subj_df['Subject'].unique().tolist())
+    else:
+      subjects = []
+
+    selected_subject = st.selectbox(
+        '3. Subject', [ALL_SUBJECTS] + subjects, index=0
     )
 
   debtor_input = (
@@ -1045,13 +1044,13 @@ elif main_menu == '👤 2. Customer Transaction Analysis':
       df_filtered_sales = master_sales_df[
           master_sales_df['School_Name'] == selected_school
       ]
-      if selected_subject:
-        df_filtered_sales = df_filtered_sales[
-            df_filtered_sales['Subject'] == selected_subject
-        ]
       if selected_teacher:
         df_filtered_sales = df_filtered_sales[
             df_filtered_sales['Teacher'] == selected_teacher
+        ]
+      if selected_subject and selected_subject != ALL_SUBJECTS:
+        df_filtered_sales = df_filtered_sales[
+            df_filtered_sales['Subject'] == selected_subject
         ]
 
       if not active_debtor and not df_filtered_sales.empty:
@@ -1211,7 +1210,10 @@ elif main_menu == '👤 2. Customer Transaction Analysis':
           if active_debtor
           else ''
       )
-      active_subj_normalized = normalize_subject(selected_subject)
+      active_subj_normalized = (
+          '' if selected_subject == ALL_SUBJECTS
+          else normalize_subject(selected_subject)
+      )
 
       for _, row in df_adjustments.iterrows():
         row_str = ' '.join(
