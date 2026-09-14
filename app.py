@@ -453,7 +453,7 @@ df["#Delivery"] = df["#Delivery"].apply(format_qty)
 # NAVIGATION MENU (Pages)
 # ==========================================
 
-if main_menu == '1. Logistic Matrix':
+if main_menu == '🚚 1. Logistic Matrix':
   st.title('🚚 Logistic Matrix')
   st.caption('Route-level dispatch, collection & task control')
   if 'page_mode' not in st.session_state:
@@ -968,7 +968,7 @@ if main_menu == '1. Logistic Matrix':
 # ==========================================
 # FUNCTION 1: CUSTOMER TRANSACTION ANALYSIS
 # ==========================================
-elif main_menu == '2. Customer Transaction Analysis':
+elif main_menu == '👤 2. Customer Transaction Analysis':
   selected_year = st.selectbox('⚙️ Operational Year', ['2026','2027','2025','2024','2023'], index=0)
   st.title('👤 Customer Transaction Analysis')
 
@@ -1296,7 +1296,7 @@ elif main_menu == '2. Customer Transaction Analysis':
 # ==========================================
 # FUNCTION 2: OUTSTANDING TRACKING DASHBOARD (INSTANT LOAD)
 # ==========================================
-elif main_menu == '3. Top Outstanding Tracking':
+elif main_menu == '💰 3. Top Outstanding Tracking':
   st.title('📈 Outstanding Tracking Dashboard')
   st.markdown('⚡ *Top 15 Outstanding Debtors Across All Files (Instant Load)*')
 
@@ -1361,7 +1361,7 @@ elif main_menu == '3. Top Outstanding Tracking':
 # ==========================================
 # FUNCTION 3: CANCELLED & HIGH-RETURN ANALYSIS
 # ==========================================
-elif main_menu == '4. Cancel Order & High Return Analysis':
+elif main_menu == '🚨 4. Cancel Order & High Return Analysis':
   st.title('🚨 Cancelled Orders & High-Return Customer Analysis')
 
   if master_sales_df.empty:
@@ -1529,7 +1529,7 @@ elif main_menu == '4. Cancel Order & High Return Analysis':
 # ==========================================
 # FUNCTION 5: INVENTORY AUDIT
 # ==========================================
-elif main_menu == '5. Inventory Audit':
+elif main_menu == '📋 5. Inventory Audit':
   st.title('📋 Inventory Audit Summary')
 
   if master_stock_summary_df.empty:
@@ -1616,7 +1616,7 @@ elif main_menu == '5. Inventory Audit':
 # ==========================================
 # FUNCTION 4: PURCHASE & RETURN RATE ANALYSIS
 # ==========================================
-elif main_menu == '6. Purchase and Return Analysis':
+elif main_menu == '📦 6. Purchase and Return Analysis':
   st.title('📦 Stock In & Return Ledger Analysis')
 
   if master_ledger_df.empty:
