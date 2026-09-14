@@ -283,6 +283,26 @@ def get_master_price(book_title):
   return None
 
 
+  return None
+
+
+def get_unit_price_for_book(book_title):
+  mp = get_master_price(book_title)
+  if mp is not None:
+    return mp
+  if (
+      not master_sales_df.empty
+      and 'Book_Title' in master_sales_df.columns
+      and 'Unit_Price' in master_sales_df.columns
+  ):
+    match = master_sales_df[
+        master_sales_df['Book_Title'] == str(book_title).strip().upper()
+    ]
+    if not match.empty:
+      return float(match['Unit_Price'].iloc[0])
+  return 38.0
+
+
 master_sales_df, master_ledger_df, master_stock_summary_df, df_payment, df_adjustments = load_all_preprocessed_data()
 
 MASTER_SETTINGS_URL = (
@@ -1660,3 +1680,4 @@ elif main_menu == '6. Purchase and Return Analysis':
       )
 
       st.dataframe(styled_ledger, use_container_width=True)
+
