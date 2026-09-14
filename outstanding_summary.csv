@@ -571,7 +571,6 @@ STPM P3 2026,SJH3,300-D004,Cikgu Daisy Rani,Maktab SAB,38,456.0,1,Maktab SAB,SJH
 STPM P3 2026,SJH3,300-D005,Cikgu Dayang,Tun Syed Zahiruddin,0,0.0,2,Tun Syed Zahiruddin,SJH3,Cikgu Dayang
 STPM P3 2026,PA3,300-D007,Cikgu Dhana,Dato Jaafar,172,3526.0,4,Dato Jaafar,PA3,Cikgu Dhana
 STPM P3 2026,EK3,,Cikgu Dini,Dato Bentara Dalam,0,0.0,2,Dato Bentara Dalam,EK3,Cikgu Dini
-STPM P3 2026,SJH3,300-K031,Cikgu Effa,Tinggi Segamat,110,1760.0,2,Tinggi Segamat,SJH3,Cikgu Effa
 STPM P3 2026,BM3,300-E014,Cikgu Emizaira,Taman Daya,55,660.0,1,Taman Daya,BM3,Cikgu Emizaira
 STPM P3 2026,PA3,300-A057,Cikgu Erma Amzari,Bandar Mas,62,1271.0,2,Bandar Mas,PA3,Cikgu Erma Amzari
 STPM P3 2026,SJH3,300-E011,Cikgu Erna,Bukit Gambir,38,608.0,2,Bukit Gambir,SJH3,Cikgu Erna
@@ -598,7 +597,7 @@ STPM P3 2026,BM3,300-H102,Cikgu Hafizah,Bukit Gambir,11,198.0,3,Bukit Gambir,BM3
 STPM P3 2026,PA3,300-H021,Cikgu Hafizhuddin,Dato Bentara Dalam,13,377.0,2,Dato Bentara Dalam,PA3,Cikgu Hafizhuddin
 STPM P3 2026,ARAB3,300-H086,Cikgu Hainori,Agama Bandar Penawar,20,400.0,1,Agama Bandar Penawar,ARAB3,Cikgu Hainori
 STPM P3 2026,EK3,300-H034,Cikgu Hairiyah,Mutiara Rini,43,1290.0,3,Mutiara Rini,EK3,Cikgu Hairiyah
-STPM P3 2026,EK3,,Cikgu Hajar,Tun Hussein Onn,12,360.0,1,Tun Hussein Onn,EK3,Cikgu Hajar
+STPM P3 2026,EK3,300-E025,Cikgu Hajar,Tun Hussein Onn,12,360.0,1,Tun Hussein Onn,EK3,Cikgu Hajar
 STPM P3 2026,BM3,,Cikgu Haliza,Sri Kukup,0,0.0,4,Sri Kukup,BM3,Cikgu Haliza
 STPM P3 2026,PA3,300-H012,Cikgu Hamizon,Kolej T6 Pontian,196,4222.0,4,Kolej T6 Pontian,PA3,Cikgu Hamizon
 STPM P3 2026,PA3,300-H029,Cikgu Hanida,Munshi Abdullah,44,902.0,2,Munshi Abdullah,PA3,Cikgu Hanida
@@ -646,6 +645,7 @@ STPM P3 2026,PA3,300-K016,Cikgu Khaira,Sultan Alauddin,26,533.0,2,Sultan Alauddi
 STPM P3 2026,PA3,300-K062,Cikgu Khairuddin,Dato Seth,46,943.0,2,Dato Seth,PA3,Cikgu Khairuddin
 STPM P3 2026,BIO3,300-K059,Cikgu Khairul,Tun Syed Zahiruddin,2,72.0,2,Tun Syed Zahiruddin,BIO3,Cikgu Khairul
 STPM P3 2026,PA3,300-P018,Cikgu Khairul,Dato Bentara Dalam,11,319.0,1,Dato Bentara Dalam,PA3,Cikgu Khairul
+STPM P3 2026,SJH3,300-K031,Cikgu Khairus,Tinggi Segamat,110,1760.0,2,Tinggi Segamat,SJH3,Cikgu Khairus
 STPM P3 2026,PA3,300-K021,Cikgu Khalid,Munshi Abdullah,34,986.0,1,Munshi Abdullah,PA3,Cikgu Khalid
 STPM P3 2026,PA3,300-L012,Cikgu Lasiah Ahmad,STUDI,36,1044.0,2,STUDI,PA3,Cikgu Lasiah Ahmad
 STPM P3 2026,BIO3,300-B013,Cikgu Lee Yee Yeong,SSI Kulai,6,144.0,1,SSI Kulai,BIO3,Cikgu Lee Yee Yeong
@@ -779,7 +779,9 @@ STPM P3 2026,EK3,300-S174,Cikgu Shafurah,Ledang,5,150.0,1,Ledang,EK3,Cikgu Shafu
 STPM P3 2026,SJH3,300-S236,Cikgu Shah Rozi,Dato Sulaiman,14,168.0,1,Dato Sulaiman,SJH3,Cikgu Shah Rozi
 STPM P3 2026,SJH3,300-S094,Cikgu Shahril,Tun Habab,22,264.0,1,Tun Habab,SJH3,Cikgu Shahril
 STPM P3 2026,EK3,300-S245,Cikgu Shahrulisham,Bandar Mas,5,150.0,1,Bandar Mas,EK3,Cikgu Shahrulisham
+STPM P3 2026,EK3,300-S219,Cikgu Shamina,Tinggi Segamat,40,1200.0,5,Tinggi Segamat,EK3,Cikgu Shamina
 STPM P3 2026,EK3,300-S147,Cikgu Shamsiah,Parit Bunga,5,150.0,1,Parit Bunga,EK3,Cikgu Shamsiah
+STPM P3 2026,KMK3,300-W011,Cikgu Shazwana,Seri Medan,64,992.0,4,Seri Medan,KMK3,Cikgu Shazwana
 STPM P3 2026,PA3,300-S337,Cikgu Siti Aishah,Bukit Gambir,72,1476.0,2,Bukit Gambir,PA3,Cikgu Siti Aishah
 STPM P3 2026,SJH3,300-S262,Cikgu Siti Aminah,Pasir Gudang 2,23,276.0,1,Pasir Gudang 2,SJH3,Cikgu Siti Aminah
 STPM P3 2026,PA3,300-K010,Cikgu Siti Fairus (KOP),Haji Hassan Yunus,96,1999.0,4,Haji Hassan Yunus,PA3,Cikgu Siti Fairus (KOP)
@@ -810,7 +812,6 @@ STPM P3 2026,AKAUN3,300-S346,Cikgu Syahida,Tun Tuah,23,782.0,1,Tun Tuah,AKAUN3,C
 STPM P3 2026,BM3,300-N101,Cikgu Syahira,SSAJ,17,204.0,1,SSAJ,BM3,Cikgu Syahira
 STPM P3 2026,SJH3,300-S352,Cikgu Syahirah,Tun Perak,24,288.0,3,Tun Perak,SJH3,Cikgu Syahirah
 STPM P3 2026,KMK3,300-S274,Cikgu Syahmi,Tun Ismail,76,1178.0,2,Tun Ismail,KMK3,Cikgu Syahmi
-STPM P3 2026,EK3,300-S219,Cikgu Syahmina,Tinggi Segamat,40,1200.0,5,Tinggi Segamat,EK3,Cikgu Syahmina
 STPM P3 2026,PA3,300-S093,Cikgu Syarifah Roha,Agama Segamat,68,1394.0,2,Agama Segamat,PA3,Cikgu Syarifah Roha
 STPM P3 2026,SJH3,300-N140,Cikgu Syuhada,Adela,24,384.0,2,Adela,SJH3,Cikgu Syuhada
 STPM P3 2026,EK3,,Cikgu Tan Siok Khim,Ledang,0,0.0,2,Ledang,EK3,Cikgu Tan Siok Khim
@@ -821,7 +822,6 @@ STPM P3 2026,BM3,300-M019,Cikgu Tuan Mazura (KP),Dato Sulaiman,34,408.0,1,Dato S
 STPM P3 2026,BIO3,300-W006,Cikgu Wan Aziela,Maktab SAB,29,912.0,3,Maktab SAB,BIO3,Cikgu Wan Aziela
 STPM P3 2026,BM3,300-B015,Cikgu Wan Azizah,Agama Bandar Penawar,0,0.0,2,Agama Bandar Penawar,BM3,Cikgu Wan Azizah
 STPM P3 2026,KMK3,300-W008,Cikgu Wan Dafreenade,Dato Hj Talib Karim,20,310.0,2,Dato Hj Talib Karim,KMK3,Cikgu Wan Dafreenade
-STPM P3 2026,KMK3,300-W011,Cikgu Wana,Seri Medan,64,992.0,4,Seri Medan,KMK3,Cikgu Wana
 STPM P3 2026,PA3,300-Y010,Cikgu Yaakub,Dato Mohd Yunos Sulaiman,28,574.0,2,Dato Mohd Yunos Sulaiman,PA3,Cikgu Yaakub
 STPM P3 2026,EK3,300-Y009,Cikgu Yazid Ismail,Datin Onn Jaafar,7,210.0,1,Datin Onn Jaafar,EK3,Cikgu Yazid Ismail
 STPM P3 2026,AKAUN3,300-Y016,Cikgu Yee,KUNTUM,9,306.0,1,KUNTUM,AKAUN3,Cikgu Yee
