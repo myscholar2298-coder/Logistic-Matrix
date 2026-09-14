@@ -1,4 +1,5 @@
 ﻿Group,Date,School Name,Teacher,Task,Title/Panitia,Sample,Qty,#Delivery,Remark,Route
+,2026-09-14,Sains Sembrong,Sabarina,Pending,BIO,,,0,,
 A,,Dato Hj Talib Karim,Cikgu Zahara,Delivery,SJH1_MTP,,10,,,A150
 A,,Seri Tanjung,Cikgu Che Aziz,Return,BM1_NOTA,,-15,,,A400
 B,,Tun Syed Zahiruddin,Cikgu Zubaidah,Delivery,PA1_MTP,1,14,,NO STOCK,B100
@@ -7,15 +8,23 @@ B,,Agama Sharifah Rodziah,Ustazah Norjumahaton,Delivery,USUL1_LEMB,,17,,NO STOCK
 B,,Tinggi Melaka,Cikgu Syahdenaem,Payment,SV1_RUJ,,,,,B450
 B,,IPGKPM JAB. PENDIDIKAN ISLAM & MORAL,USTAZ ARIFFIN,Delivery,ALQURAN,1,39,,NO STOCK / LOW SAMPLE,B480
 B,,IPGKPM JABATAN BAHASA,PN ROSLINA RASDI,Delivery,ENGLISH,8,55,,NO STOCK / LOW SAMPLE,B480
+B,,IPGKPM JABATAN ILMU PENDIDIKAN,ENCIK KHAIRI,Return,BELAJAR,-5,-270,,,B480
+B,,IPGKPM JABATAN ILMU PENDIDIKAN,ENCIK KHAIRI,Return,PEDAGOGI,,-9,,,B480
 B,,IPGKPM JABATAN ILMU PENDIDIKAN,PUAN ZURAIDAH,Delivery,TEKNOLOGI,1,70,,NO STOCK / LOW SAMPLE,B480
 B,,IPGKPM JABATAN PENGAJIAN MELAYU,PUAN JAMILAH,Delivery,FONETIK,1,45,,NO STOCK / LOW SAMPLE,B480
+B,,KUNTUM,Cikgu Lau,Delivery,EK3_RUJ,1,10,,,B500
+B,,KUNTUM,Cikgu Gunavathy,Delivery,SJH3_MTP,1,24,,LOW SAMPLE,B500
 B,,Sultan Muhammad,Ustazah Nur Imani,Delivery,ARAB1_LEMB,,3,,NO STOCK,B600
 B,,Sultan Muhammad,Ustaz Hakki,Delivery,USUL1_LEMB,,6,,NO STOCK,B600
+B,,Munshi Abdullah,Cikgu Hanida,Payment,PA1_MTP,,,,,B650
+B,,Munshi Abdullah,Cikgu Hanida,Payment,PA1_NOTA,,,,,B650
+B,,Munshi Abdullah,Cikgu Hanida,Payment,PA3_MTP,,,,,B650
+B,,Munshi Abdullah,Cikgu Hanida,Payment,PA3_NOTA,,,,,B650
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH1_MTP,,,,,C350
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH3_MTP,,,,,C350
 C,,Munshi Ibrahim,Cikgu Nora,Payment,SJH3_MTP,,,,,C350
-C,,Tinggi Segamat,Cikgu Effa,Payment,SJH1_MTP,,,,,C600
-C,,Tinggi Segamat,Cikgu Effa,Return,SJH1_MTP,,,,,C600
+C,,Tinggi Segamat,Cikgu Khairus,Payment,SJH1_MTP,,,,,C600
+C,,Tinggi Segamat,Cikgu Khairus,Return,SJH1_MTP,,,,,C600
 C,,Tinggi Segamat,Cikgu Effa,Payment,SJH3_MTP,,,,,C600
 C,,Tinggi Segamat,Cikgu Effa,Return,SJH3_MTP,,,,,C600
 C,,Tinggi Segamat,Cikgu Effa,Payment,SJH3_MTP,,,,,C600
@@ -36,15 +45,17 @@ D,2026-08-06,Sains Muar,En Yuzri,Deliver,KIMIA,,1.0,2#,,D475
 D,,Parit Bunga,Cikgu Shamsiah,Payment,EK1_LEMB,,,,,D500
 D,,Parit Bunga,Cikgu Shamsiah,Payment,EK3_RUJ,,,,,D500
 D,,Datuk Bendahara,Cikgu Safwanah,Return,MUET_MTP,-1,-10,,,D600
+E,2026-09-14,Raja Muda,Pejabat,Cheque,,,,0,,E200
 G,,IPGKTHO JAB. ILMU PENDIDIKAN,DR. NORLIA HANUN,Delivery,PENULISAN,,100,,NO STOCK,G113
 G,,IPGKTHO JABATAN ILMU PENDIDIKAN,DR. RASIDAYANTI,Delivery,PEDAGOGI,,12,,NO STOCK,G113
-G,2026-09-11,Sains Johor,Pn Farhana,Pending,FIZ,,,0,,G325
-G,2026-09-11,Sains Johor,Pn Sara,Pending,KIMIA,,,0,,G325
+G,2026-09-11,Sains Johor,Pn Farhana,Deliver,FIZ,,1.0,1#,,G325
+G,2026-09-11,Sains Johor,Pn Sara,Deliver,KIMIA,,1.0,1#,,G325
+G,,Tun Hussein Onn,Cikgu Zalina,Payment,PA1_MTP,,,,,G340
 G,2026-09-10,Taman Seri Kluang,Pejabat,Cheque,GKT,,,0,,G350
-G,2026-09-11,Sains Sembrong,Pn Rohaiza,Pending,FIZ,,,0,,G475
+G,2026-09-11,Sains Sembrong,Pn Rohaiza,Deliver,FIZ,,1.0,1#,,G475
 G,2026-09-11,Sains Sembrong,Taufik,Pending,PSV,,,0,,G475
 G,,Haji Hassan Yunus,Cikgu Norini,Return,MUET_THEMA,,-1,,,G550
-G,2026-09-09,SDARA,Suhaila,Deliver,PSV,,,0,,G640
+G,2026-09-09,SDARA,Suhaila,Deliver,PSV,,3.0,1#,,G640
 H,2026-09-11,Tan Sri Osman Saat,Rafieah,Deliver,PSV,,,1,,H330
 I,,STAR Putra,Cikgu Siti Hajar,Payment,PA1_ESEI,,,,,I100
 I,,STAR Putra,Cikgu Siti Hajar,Payment,PA1_MTP,,,,,I100
@@ -65,6 +76,7 @@ J,,Maktab SAB,Cikgu Nordiana,Delivery,MUET_MTP,1,15,,,J450
 J,,IPGKTI JAB. ILMU PENDIDIKAN,ENCIK MOHAMAD DAUD,Return,PENULISAN,,-16,,,J530
 J,,IPGKTI JABATAN BAHASA,DR HAFIZ,Delivery,ENGLISH,,100,,NO STOCK,J530
 J,,IPGKTI JABATAN ILMU PENDIDIKAN,PUAN NOR MALISSA,Delivery,PEDAGOGI,,45,,NO STOCK,J530
+J,2026-09-14,Tun Syed Nasir,Aqilah,Pending,PSV,,,0,,J610
 K,,Pasir Gudang 2,Cikgu Sumar,Delivery,PA1_MTP,,2,,NO STOCK,K425
 L,,Agama Bandar Penawar,Cikgu Haliza,Return,MUET_THEMA,,-1,,,L250
 L,,Agama Bandar Penawar,Cikgu Rozainah @ Cikgu Ann,Return,PA1_ESEI,,-1,,,L250
@@ -74,4 +86,4 @@ L,,Agama Bandar Penawar,Cikgu Faizah,Payment,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-09-12 23:30:46
+# Last Sync Check: 2026-09-14 16:30:22
