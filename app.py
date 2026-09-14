@@ -10,10 +10,15 @@ import pandas as pd
 import requests
 import streamlit as st
 
+
+
 # 1. Page Configuration optimized for mobile viewport
+import streamlit as st
+from pathlib import Path
+
 st.set_page_config(
     page_title="MyScholar Operation Center",
-    page_icon="favicon.png",
+    page_icon=str(Path(__file__).parent / "myscholar_oc_favicon_32.png"),
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -1746,4 +1751,5 @@ elif main_menu == '📦 6. Purchase and Return Analysis':
       )
 
       st.dataframe(styled_ledger, use_container_width=True)
+
 
