@@ -1,6 +1,6 @@
 # ==========================================
-# SOFTWARE VERSION: v2.7 (Consolidated)
-# Timestamp to sidebar; tightened mobile spacing
+# SOFTWARE VERSION: v2.8 (Consolidated)
+# Sidebar menu styling; module icons
 # ==========================================
 import base64
 import os
@@ -83,6 +83,26 @@ st.markdown(
     /* ===== Desktop: give data tables room to breathe ===== */
     .main .block-container { max-width: 95% !important; padding-left: 1.5rem; padding-right: 1.5rem; }
 
+    /* ===== Sidebar nav: menu-style radio ===== */
+    section[data-testid="stSidebar"] div[role="radiogroup"] { gap: 2px; }
+    section[data-testid="stSidebar"] div[role="radiogroup"] label {
+      width: 100%; padding: 8px 10px !important; border-radius: 8px;
+      margin: 1px 0; cursor: pointer; transition: background 0.12s;
+    }
+    section[data-testid="stSidebar"] div[role="radiogroup"] label:hover {
+      background: #fff0e0;
+    }
+    section[data-testid="stSidebar"] div[role="radiogroup"] label svg { display: none; }
+    section[data-testid="stSidebar"] div[role="radiogroup"] label p {
+      font-size: 14.5px !important; line-height: 1.35 !important;
+    }
+    section[data-testid="stSidebar"] div[role="radiogroup"] label:has(input:checked) {
+      background: #f58220;
+    }
+    section[data-testid="stSidebar"] div[role="radiogroup"] label:has(input:checked) p {
+      color: #fff !important; font-weight: 700 !important;
+    }
+
     /* ===== Mobile refinements ===== */
     @media (max-width: 768px) {
         .main .block-container { max-width: 100% !important; padding-left: 0.4rem !important; padding-right: 0.4rem !important; padding-top: 0.5rem !important; }
@@ -156,16 +176,16 @@ if os.path.exists('logo.png'):
 st.sidebar.markdown('## 🏫 MyScholar Operation Center')
 st.sidebar.divider()
 if 'main_menu' not in st.session_state:
-  st.session_state['main_menu'] = '1. Logistic Matrix'
+  st.session_state['main_menu'] = '🚚 1. Logistic Matrix'
 main_menu = st.sidebar.radio(
     'Module',
     [
-        '1. Logistic Matrix',
-        '2. Customer Transaction Analysis',
-        '3. Top Outstanding Tracking',
-        '4. Cancel Order & High Return Analysis',
-        '5. Inventory Audit',
-        '6. Purchase and Return Analysis',
+        '🚚 1. Logistic Matrix',
+        '👤 2. Customer Transaction Analysis',
+        '💰 3. Top Outstanding Tracking',
+        '🚨 4. Cancel Order & High Return Analysis',
+        '📋 5. Inventory Audit',
+        '📦 6. Purchase and Return Analysis',
     ],
     key='main_menu',
     label_visibility='collapsed',
