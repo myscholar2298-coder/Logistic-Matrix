@@ -453,6 +453,12 @@ df["#Delivery"] = df["#Delivery"].apply(format_qty)
 # NAVIGATION MENU (Pages)
 # ==========================================
 
+def _jump_to_transaction(debtor_code):
+  """Module 3 -> Module 2 jump: prefill debtor input and switch module."""
+  st.session_state['debtor_input'] = debtor_code
+  st.session_state['main_menu'] = '👤 2. Customer Transaction Analysis'
+
+
 if main_menu == '🚚 1. Logistic Matrix':
   st.title('🚚 Logistic Matrix')
   st.caption('Route-level dispatch, collection & task control')
@@ -1021,7 +1027,10 @@ elif main_menu == '👤 2. Customer Transaction Analysis':
     )
 
   debtor_input = (
-      st.text_input('Debtor Code (Direct Input, e.g., 300-K081)')
+      st.text_input(
+          'Debtor Code (Direct Input, e.g., 300-K081)',
+          key='debtor_input',
+      )
       .strip()
       .upper()
   )
@@ -1049,6 +1058,13 @@ elif main_menu == '👤 2. Customer Transaction Analysis':
         exp_matches = df_filtered_sales['Explicit_Debtor'].dropna().unique()
         if len(exp_matches) > 0 and exp_matches[0]:
           active_debtor = exp_matches[0]
+
+    elif active_debtor and not master_sales_df.empty:
+      # Debtor-only lookup: pull all his records across every school/subject
+      df_filtered_sales = master_sales_df[
+          master_sales_df['Explicit_Debtor'].astype(str).str.upper().str.strip()
+          == str(active_debtor).upper().strip()
+      ]
 
     if active_debtor:
       st.markdown(f'### 🏷️ Active Debtor Code: **{active_debtor}**')
@@ -1267,6 +1283,21 @@ elif main_menu == '👤 2. Customer Transaction Analysis':
     )
     st.markdown('---')
 
+    if active_debtor and not df_filtered_sales.empty:
+      subj_break = (
+          df_filtered_sales.groupby('Subject')
+          .agg(**{
+              'Net Qty': ('Quantity', 'sum'),
+              'Deliveries Value (RM)': ('Total_Value', 'sum'),
+          })
+          .reset_index()
+          .sort_values('Deliveries Value (RM)', ascending=False)
+      )
+      if len(subj_break) > 1:
+        st.subheader('📚 Subject / Penggal Breakdown')
+        st.dataframe(subj_break, use_container_width=True, hide_index=True)
+        st.markdown('---')
+
     st.subheader('1. Itemized Deliveries (Combined Breakdown)')
     if len(phase_rows) > 0:
       st.dataframe(pd.DataFrame(phase_rows), use_container_width=True)
@@ -1355,6 +1386,19 @@ elif main_menu == '💰 3. Top Outstanding Tracking':
           selection_mode='single-row',
           key=f'table_{f_src}',
       )
+
+      selected_rows = event.selection.rows if event and event.selection else []
+      if selected_rows:
+        sel_row = df_file_sub.iloc[selected_rows[0]]
+        sel_code = str(sel_row['Debtor Code'])
+        st.button(
+            f'👤 Jump to Customer Transaction Analysis - {sel_code}'
+            f' ({sel_row["Teacher"]})',
+            key=f'jump_btn_{f_src}',
+            use_container_width=True,
+            on_click=_jump_to_transaction,
+            args=(sel_code,),
+        )
 
 
 
