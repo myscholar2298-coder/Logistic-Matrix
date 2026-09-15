@@ -59,8 +59,6 @@ G,2026-09-11,Sains Sembrong,Taufik,Pending,PSV,,,0,,G475
 G,,Haji Hassan Yunus,Cikgu Norini,Return,MUET_THEMA,,-1,,,G550
 G,2026-09-09,SDARA,Suhaila,Deliver,PSV,,3.0,1#,,G640
 H,2026-09-11,Tan Sri Osman Saat,Rafieah,Deliver,PSV,,,1,,H330
-I,,STAR Putra,Cikgu Siti Hajar,Payment,PA3_MTP,,,,,I100
-I,,STAR Putra,Cikgu Siti Hajar,Payment,PA3_NOTA,,,,,I100
 I,,Bandar Kota Tinggi,Cikgu Hazura,Payment,PA1_ESEI,,,,,I450
 I,,Bandar Kota Tinggi,Cikgu Hazura,Payment,PA1_MTP,,,,,I450
 I,,Bandar Kota Tinggi,Cikgu Hazura,Payment,PA1_NOTA,,,,,I450
@@ -75,4 +73,4 @@ L,,Agama Bandar Penawar,Cikgu Rozainah @ Cikgu Ann,Return,PA1_NOTA,,-1,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,-7,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-09-15 13:30:11
+# Last Sync Check: 2026-09-15 14:01:09
