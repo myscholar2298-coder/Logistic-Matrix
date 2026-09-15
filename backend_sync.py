@@ -4,6 +4,7 @@ import os
 import re
 import shutil
 import subprocess
+import sys
 import time
 from pathlib import Path
 import openpyxl
@@ -22,30 +23,43 @@ def find_shared_drive():
     alt_path = Path(f'{drive_letter}:\\OPERATION')
     if alt_path.exists():
       return alt_path
-  return Path(r'G:\Shared drives\OPERATION')  # Default fallback
+  return Path(r'H:\Shared drives\OPERATION')  # Default fallback
 
 
 SHARED_DRIVE_ROOT = find_shared_drive()
 LP_FOLDER = SHARED_DRIVE_ROOT / 'LP'
 
+# The git repo is ALWAYS the folder this script lives in.
+# (Old version searched for the ancient Google Drive path and could push
+#  to the wrong copy of the repo.)
+GITHUB_REPO_DIR = Path(__file__).resolve().parent
 
-def find_git_repo():
-  """Locate the git repo folder (where Extract_Dispatch_Data.csv is pushed)."""
-  here = Path(__file__).resolve().parent
-  candidates = [
-      here,
-      here.parent / 'Streamlit',
-      Path(r'C:\Users\SERVER\My Drive (admin@myscholarnow.com)\Coding Script\Streamlit'),
-  ]
-  for c in candidates:
-    if (c / '.git').exists():
-      return c
-  return here
-
-
-GITHUB_REPO_DIR = find_git_repo()
 DELIVERY_PLAN_FOLDER = SHARED_DRIVE_ROOT / 'Delivery Plan'
 CUSTOMER_STATEMENT_FOLDER = SHARED_DRIVE_ROOT / 'Customer Statement'
+
+GIT_NAME = 'myscholar2298-coder'
+GIT_EMAIL = 'myscholar2298@gmail.com'
+
+
+def run_git(args, check=True):
+  """Run a git command; raise RuntimeError with DECODED output on failure."""
+  r = subprocess.run(['git'] + args, capture_output=True)
+  if check and r.returncode != 0:
+    raise RuntimeError(
+        f"git {' '.join(args)} failed (exit {r.returncode}):\n"
+        f"{r.stderr.decode(errors='replace')}"
+    )
+  return r
+
+
+def ensure_git_identity():
+  """Self-heal if git identity is missing."""
+  name = run_git(['config', '--get', 'user.name'], check=False)
+  email = run_git(['config', '--get', 'user.email'], check=False)
+  if not name.stdout.strip() or not email.stdout.strip():
+    run_git(['config', 'user.name', GIT_NAME])
+    run_git(['config', 'user.email', GIT_EMAIL])
+    print(f'Git identity auto-set: {GIT_NAME} / {GIT_EMAIL}')
 
 
 def normalize_subject(subj_str):
@@ -56,7 +70,8 @@ def normalize_subject(subj_str):
 
 
 def save_csv(df, filename, retries=3, delay_s=10):
-  """Write a CSV with retry; survives Excel file locks instead of crashing."""
+  """Write a CSV with retry; survives Excel file locks instead of crashing.
+  Returns True on success, False if the file stayed locked."""
   for attempt in range(1, retries + 1):
     try:
       df.to_csv(filename, index=False)
@@ -90,9 +105,11 @@ def safe_float(val):
 def run_backend_sync():
   print('--- Starting Full Local Shared Drive Sync ---')
 
+  # HARD FAIL if the source folder is unreachable
   if not LP_FOLDER.exists():
-    print(f'Error: LP folder not found at {LP_FOLDER}')
-    return
+    print(f'FATAL: LP folder not found at {LP_FOLDER}')
+    print('Is Google Drive for Desktop running? Is the drive letter correct?')
+    sys.exit(1)
 
   # 1. Load Master Settings Locally from Delivery Plan folder
   #    - Prefer files named exactly "Master_Settings*"
@@ -516,9 +533,10 @@ def run_backend_sync():
 
   # Save primary operational CSVs
   df_sales_final = pd.DataFrame(all_sales_records)
-  save_csv(df_sales_final, 'sales_transactions.csv')
-  save_csv(pd.DataFrame(ledger_records), 'stock_ledger.csv')
-  save_csv(pd.DataFrame(summary_audit_records), 'stock_summary.csv')
+  save_ok = True
+  save_ok &= save_csv(df_sales_final, 'sales_transactions.csv')
+  save_ok &= save_csv(pd.DataFrame(ledger_records), 'stock_ledger.csv')
+  save_ok &= save_csv(pd.DataFrame(summary_audit_records), 'stock_summary.csv')
 
   # 4. Pre-calculate Menu 2 Outstanding Summary
   print('Pre-calculating Menu 2 Outstanding Summary...')
@@ -548,7 +566,12 @@ def run_backend_sync():
           '_teacher': teacher_name,
       })
 
-    save_csv(pd.DataFrame(summary_records), 'outstanding_summary.csv')
+    save_ok &= save_csv(pd.DataFrame(summary_records), 'outstanding_summary.csv')
+
+  if not save_ok:
+    print('FATAL: One or more CSVs could not be saved (still locked?).')
+    print('The data pushed to GitHub would be stale - aborting push.')
+    sys.exit(1)
 
   # 5. Push BI CSVs + Master_Settings to GitHub (same repo as dispatch CSV)
   push_files = [
@@ -575,24 +598,33 @@ def run_backend_sync():
       print('GitHub push: no files to push.')
     else:
       os.chdir(GITHUB_REPO_DIR)
-      subprocess.run(['git', 'add'] + copied, check=True, capture_output=True)
-      if subprocess.run(['git', 'diff', '--cached', '--quiet']).returncode == 0:
-        print('GitHub push: no changes detected.')
-      else:
-        subprocess.run(
-            ['git', 'commit', '-m',
-             f'BI data sync {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}'],
-            check=True, capture_output=True,
+      ensure_git_identity()
+      run_git(['add'] + copied)
+      made_commit = False
+      if run_git(['diff', '--cached', '--quiet'], check=False).returncode != 0:
+        run_git([
+            'commit', '-m',
+            f'BI data sync {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}',
+        ])
+        made_commit = True
+      # ALWAYS push - even if this script committed nothing, AutoUpdate.py
+      # may have left an unpushed commit that only this push can deliver.
+      try:
+        run_git(
+            ['pull', '--rebase', '--autostash', '-X', 'theirs', 'origin', 'main']
         )
-        subprocess.run(
-            ['git', 'pull', '--rebase', 'origin', 'main'], capture_output=True
-        )
-        subprocess.run(
-            ['git', 'push', 'origin', 'main'], check=True, capture_output=True
-        )
+      except RuntimeError:
+        run_git(['rebase', '--abort'], check=False)
+        raise
+      run_git(['push', 'origin', 'main'])
+      if made_commit:
         print(f'GitHub push: {len(copied)} files pushed.')
+      else:
+        print('GitHub push: no new BI commit, but pending commits were pushed.')
   except Exception as e:
-    print(f'GitHub push skipped/failed: {e}')
+    # LOUD failure - Task Scheduler will show a non-zero result
+    print(f'FATAL: GitHub push failed:\n{e}')
+    sys.exit(1)
 
   print('--- Local Shared Drive Sync Complete! ---')
 
