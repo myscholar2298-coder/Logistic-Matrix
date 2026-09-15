@@ -62,17 +62,13 @@ I,,STAR Putra,Cikgu Siti Hajar,Payment,PA1_MTP,,,,,I100
 I,,STAR Putra,Cikgu Siti Hajar,Payment,PA1_NOTA,,,,,I100
 I,,STAR Putra,Cikgu Siti Hajar,Payment,PA3_MTP,,,,,I100
 I,,STAR Putra,Cikgu Siti Hajar,Payment,PA3_NOTA,,,,,I100
-I,,STAR Putra,Cikgu Nur Afiza,Return,SJH3_MTP,,,,,I100
 I,,SSI Kulai,Cikgu Rodiah,Payment,KMK1_MTP,,,,,I150
 I,,SSI Kulai,Cikgu Rodiah,Payment,KMK1_RUJ,,,,,I150
-I,,SSI Kulai,Cikgu Rodiah,Payment,KMK3_MTP,,,,,I150
-I,,SSI Kulai,Cikgu Rodiah,Payment,KMK3_RUJ,,,,,I150
 I,,Bandar Kota Tinggi,Cikgu Hazura,Payment,PA1_ESEI,,,,,I450
 I,,Bandar Kota Tinggi,Cikgu Hazura,Payment,PA1_MTP,,,,,I450
 I,,Bandar Kota Tinggi,Cikgu Hazura,Payment,PA1_NOTA,,,,,I450
 I,,Ulu Tiram,Cikgu Miza,Delivery,MUET_MTP,,60,,,I550
 J,,Maktab SAB,Cikgu Nordiana,Delivery,MUET_MTP,1,15,,,J450
-J,,IPGKTI JAB. ILMU PENDIDIKAN,ENCIK MOHAMAD DAUD,Return,PENULISAN,,-16,,,J530
 J,,IPGKTI JABATAN BAHASA,DR HAFIZ,Delivery,ENGLISH,,100,,NO STOCK,J530
 J,,IPGKTI JABATAN ILMU PENDIDIKAN,PUAN NOR MALISSA,Delivery,PEDAGOGI,,45,,NO STOCK,J530
 J,2026-09-14,Tun Syed Nasir,Aqilah,Pending,PSV,,,0,,J610
@@ -86,4 +82,4 @@ L,,Agama Bandar Penawar,Cikgu Faizah,Payment,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-09-15 10:30:13
+# Last Sync Check: 2026-09-15 11:00:23
