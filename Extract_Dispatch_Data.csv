@@ -44,7 +44,9 @@ D,2026-08-06,Sains Muar,En Yuzri,Deliver,KIMIA,,1.0,2#,,D475
 D,,Parit Bunga,Cikgu Shamsiah,Payment,EK1_LEMB,,,,,D500
 D,,Parit Bunga,Cikgu Shamsiah,Payment,EK3_RUJ,,,,,D500
 D,,Datuk Bendahara,Cikgu Safwanah,Return,MUET_MTP,-1,-10,,,D600
+E,,Pekan Baru,Cikgu Nur Azreen,Return,PP1_MTP,,-2,,,E150
 E,2026-09-14,Raja Muda,Pejabat,Cheque,,,,0,,E200
+E,,Tengku Mahkota,Cikgu Norazlina,Payment,PA1_NOTA,,,,,E250
 G,,IPGKTHO JAB. ILMU PENDIDIKAN,DR. NORLIA HANUN,Delivery,PENULISAN,,100,,NO STOCK,G113
 G,,IPGKTHO JABATAN ILMU PENDIDIKAN,DR. RASIDAYANTI,Delivery,PEDAGOGI,,12,,NO STOCK,G113
 G,2026-09-11,Sains Johor,Pn Farhana,Deliver,FIZ,,1.0,1#,,G325
@@ -57,29 +59,20 @@ G,2026-09-11,Sains Sembrong,Taufik,Pending,PSV,,,0,,G475
 G,,Haji Hassan Yunus,Cikgu Norini,Return,MUET_THEMA,,-1,,,G550
 G,2026-09-09,SDARA,Suhaila,Deliver,PSV,,3.0,1#,,G640
 H,2026-09-11,Tan Sri Osman Saat,Rafieah,Deliver,PSV,,,1,,H330
-I,,STAR Putra,Cikgu Siti Hajar,Payment,PA1_ESEI,,,,,I100
-I,,STAR Putra,Cikgu Siti Hajar,Payment,PA1_MTP,,,,,I100
-I,,STAR Putra,Cikgu Siti Hajar,Payment,PA1_NOTA,,,,,I100
 I,,STAR Putra,Cikgu Siti Hajar,Payment,PA3_MTP,,,,,I100
 I,,STAR Putra,Cikgu Siti Hajar,Payment,PA3_NOTA,,,,,I100
-I,,SSI Kulai,Cikgu Rodiah,Payment,KMK1_MTP,,,,,I150
-I,,SSI Kulai,Cikgu Rodiah,Payment,KMK1_RUJ,,,,,I150
 I,,Bandar Kota Tinggi,Cikgu Hazura,Payment,PA1_ESEI,,,,,I450
 I,,Bandar Kota Tinggi,Cikgu Hazura,Payment,PA1_MTP,,,,,I450
 I,,Bandar Kota Tinggi,Cikgu Hazura,Payment,PA1_NOTA,,,,,I450
-I,,Ulu Tiram,Cikgu Miza,Delivery,MUET_MTP,,60,,,I550
-J,,Maktab SAB,Cikgu Nordiana,Delivery,MUET_MTP,1,15,,,J450
 J,,IPGKTI JABATAN BAHASA,DR HAFIZ,Delivery,ENGLISH,,100,,NO STOCK,J530
 J,,IPGKTI JABATAN ILMU PENDIDIKAN,PUAN NOR MALISSA,Delivery,PEDAGOGI,,45,,NO STOCK,J530
 J,2026-09-14,Tun Syed Nasir,Aqilah,Pending,PSV,,,0,,J610
 K,2026-09-14,Taman Seri Saujana,Izza,Pending,PSV,,,0,K,K210
-K,,Pasir Gudang 2,Cikgu Sumar,Delivery,PA1_MTP,,2,,NO STOCK,K425
 L,,Agama Bandar Penawar,Cikgu Haliza,Return,MUET_THEMA,,-1,,,L250
 L,,Agama Bandar Penawar,Cikgu Rozainah @ Cikgu Ann,Return,PA1_ESEI,,-1,,,L250
 L,,Agama Bandar Penawar,Cikgu Rozainah @ Cikgu Ann,Return,PA1_MTP,,-1,,,L250
 L,,Agama Bandar Penawar,Cikgu Rozainah @ Cikgu Ann,Return,PA1_NOTA,,-1,,,L250
-L,,Agama Bandar Penawar,Cikgu Faizah,Payment,SJH1_MTP,,,,,L250
-L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,,,,L250
+L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,-7,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-09-15 12:30:45
+# Last Sync Check: 2026-09-15 13:00:14
