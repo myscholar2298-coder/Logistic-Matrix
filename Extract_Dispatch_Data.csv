@@ -52,18 +52,11 @@ E,,Pekan Baru,Cikgu Nur Azreen,Return,PP1_MTP,,-2,,,E150
 E,2026-09-14,Raja Muda,Pejabat,Cheque,,,,0,,E200
 E,,Tengku Mahkota,Cikgu Norazlina,Payment,PA1_NOTA,,,,,E250
 E,,KV Muar,Ustazah Irdina,Delivery,KV_ARAB2'26,1,103,,NO STOCK / LOW SAMPLE,E525
-G,,IPGKTHO JAB. ILMU PENDIDIKAN,DR. NORLIA HANUN,Delivery,PENULISAN,,100,,NO STOCK,G113
+G,,IPGKTHO JAB. ILMU PENDIDIKAN,DR. NORLIA HANUN,Delivery,PENULISAN,,84,,NO STOCK,G113
 G,,IPGKTHO JABATAN ILMU PENDIDIKAN,DR. RASIDAYANTI,Delivery,PEDAGOGI,,12,,LOW STOCK,G113
-G,2026-09-11,Sains Johor,Pn Farhana,Deliver,FIZ,,1.0,1#,,G325
-G,2026-09-11,Sains Johor,Pn Sara,Deliver,KIMIA,,1.0,1#,,G325
-G,,Tun Hussein Onn,Cikgu Zalina,Payment,PA1_MTP,,,,,G340
-G,2026-09-10,Taman Seri Kluang,Pejabat,Cheque,GKT,,,0,,G350
 G,2026-09-14,Sains Sembrong,Sabarina,Pending,BIO,,,0,,G475
-G,2026-09-11,Sains Sembrong,Pn Rohaiza,Deliver,FIZ,,1.0,1#,,G475
 G,2026-09-11,Sains Sembrong,Taufik,Pending,PSV,,,0,,G475
 G,,KV Kluang,Ustazah Nor Mastura,Delivery,KV_ARAB2'26,2,136,,NO STOCK / LOW SAMPLE,G510
-G,,Haji Hassan Yunus,Cikgu Norini,Return,MUET_THEMA,,-1,,,G550
-G,2026-09-09,SDARA,Suhaila,Deliver,PSV,,3.0,1#,,G640
 H,2026-09-11,Tan Sri Osman Saat,Rafieah,Deliver,PSV,,1.0,3#,,H330
 H,,KV Tanjung Piai,Encik Zulhilmi,Delivery,KV_ARAB2'26,1,33,,NO STOCK / LOW SAMPLE,H345
 I,,Bandar Kota Tinggi,Cikgu Hazura,Payment,PA1_ESEI,,,,,I450
@@ -84,4 +77,4 @@ L,2026-09-15,Agama Bandar Penawar,Sharifah,Pending,RBT,,,0,K,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,-7,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-09-15 16:18:37
+# Last Sync Check: 2026-09-15 17:26:52
