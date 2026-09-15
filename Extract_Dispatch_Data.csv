@@ -67,8 +67,8 @@ J,,IPGKTI JABATAN BAHASA,DR HAFIZ,Delivery,ENGLISH,,100,,NO STOCK,J530
 J,,IPGKTI JABATAN ILMU PENDIDIKAN,PUAN NOR MALISSA,Delivery,PEDAGOGI,,45,,LOW STOCK,J530
 J,,KV Perdagangan,Encik Syafiq,Delivery,KV_ARAB2'26,1,43,,NO STOCK / LOW SAMPLE,J560
 J,,KV ERT Azizah,Encik Hilmi,Delivery,KV_ARAB2'25,1,53,,NO STOCK / LOW SAMPLE,J580
-J,2026-09-14,Tun Syed Nasir,Aqilah,Deliver,PSV,,,1#,,J610
-K,2026-09-14,Taman Seri Saujana,Izza,Pending,PSV,,,0,K,K210
+J,2026-09-14,Tun Syed Nasir,Aqilah,Deliver,PSV,,3.0,1#,,J610
+K,2026-09-14,Taman Seri Saujana,Izza,Pending,PSV,,2.0,0,K,K210
 L,,Agama Bandar Penawar,Cikgu Haliza,Return,MUET_THEMA,,-1,,,L250
 L,,Agama Bandar Penawar,Cikgu Rozainah @ Cikgu Ann,Return,PA1_ESEI,,-1,,,L250
 L,,Agama Bandar Penawar,Cikgu Rozainah @ Cikgu Ann,Return,PA1_MTP,,-1,,,L250
@@ -77,4 +77,4 @@ L,2026-09-15,Agama Bandar Penawar,Sharifah,Pending,RBT,,,0,K,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH1_MTP,,-7,,,L250
 L,,Agama Bandar Penawar,Cikgu Faizah,Return,SJH3_MTP,,-1,,,L250
 
-# Last Sync Check: 2026-09-15 17:38:32
+# Last Sync Check: 2026-09-15 18:00:15
