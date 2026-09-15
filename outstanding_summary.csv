@@ -105,19 +105,21 @@ IPG Aug 2026,ALQURAN,300-H089,USTAZ HAZLI,IPGKTHO JAB. PENDIDIKAN ISLAM & MORAL,
 IPG Aug 2026,IBADAH,300-J039,USTAZ MAHAZAD,IPGKTI JAB. PENDIDIKAN ISLAM & MORAL,14,308.0,2,IPGKTI JAB. PENDIDIKAN ISLAM & MORAL,IBADAH,USTAZ MAHAZAD
 IPG Aug 2026,ALQURAN,300-H104,USTAZAH HAJAR,IPGKTI JAB. PENDIDIKAN ISLAM & MORAL,40,880.0,1,IPGKTI JAB. PENDIDIKAN ISLAM & MORAL,ALQURAN,USTAZAH HAJAR
 IPG Aug 2026,IBADAH,300-N130,USTAZAH NOR SAADAH,IPGKPM JAB. PENDIDIKAN ISLAM & MORAL,34,748.0,2,IPGKPM JAB. PENDIDIKAN ISLAM & MORAL,IBADAH,USTAZAH NOR SAADAH
-KV S2 2026,B.ARAB(S1),300-24.4 : TOPUP 10+3,Encik Farhan,KV Melaka Tengah,159,4770.0,3,KV Melaka Tengah,B.ARAB(S1),Encik Farhan
-KV S2 2026,B.ARAB(S1),300-KOPERASI,Encik Hilmi,KV ERT Azizah,50,1500.0,1,KV ERT Azizah,B.ARAB(S1),Encik Hilmi
-KV S2 2026,B.ARAB(S1),300-KOPERASI,Encik Huzaifi,KV Jasin,37,1110.0,1,KV Jasin,B.ARAB(S1),Encik Huzaifi
-KV S2 2026,B.ARAB(S1),,Encik Kamarul,KV Tanjung Puteri,75,2250.0,1,KV Tanjung Puteri,B.ARAB(S1),Encik Kamarul
-KV S2 2026,B.ARAB(S1),300-KOPERASI,Encik Syafiq,KV Perdagangan,49,1470.0,2,KV Perdagangan,B.ARAB(S1),Encik Syafiq
-KV S2 2026,B.ARAB(S1),300-DIRECT,Encik Zulhilmi,KV Tanjung Piai,56,1680.0,2,KV Tanjung Piai,B.ARAB(S1),Encik Zulhilmi
-KV S2 2026,B.ARAB(S1),300-DIRECT,Puan Aishah,KV Datuk Seri Mohd Zin,140,4200.0,3,KV Datuk Seri Mohd Zin,B.ARAB(S1),Puan Aishah
-KV S2 2026,B.ARAB(S1),300-KOPERASI,Puan Asyadah,KV Kota Tinggi,165,4950.0,2,KV Kota Tinggi,B.ARAB(S1),Puan Asyadah
-KV S2 2026,B.ARAB(S1),300-KOPERASI,Puan Izzati,KV Pagoh,56,1680.0,1,KV Pagoh,B.ARAB(S1),Puan Izzati
-KV S2 2026,B.ARAB(S1),300-24.4 : TOPUP 3,Puan Norfarahin (KOP),KV Segamat,127,3810.0,3,KV Segamat,B.ARAB(S1),Puan Norfarahin (KOP)
-KV S2 2026,B.ARAB(S1),300-24.4 : TOPUP 75,Ustazah Irdina,KV Muar,136,4080.0,3,KV Muar,B.ARAB(S1),Ustazah Irdina
-KV S2 2026,B.ARAB(S1),300-DIRECT,Ustazah Nor Mastura,KV Kluang,275,8250.0,2,KV Kluang,B.ARAB(S1),Ustazah Nor Mastura
-KV S2 2026,B.ARAB(S1),,Ustazah Rakiyah,KV Batu Pahat,30,900.0,1,KV Batu Pahat,B.ARAB(S1),Ustazah Rakiyah
+KV S2 2026,KV_ARAB2'25,,Encik Farhan,KV Melaka Tengah,79,3002.0,1,KV Melaka Tengah,KV_ARAB2'25,Encik Farhan
+KV S2 2026,KV_ARAB2'26,300-KOPERASI,Encik Farhan,KV Melaka Tengah,79,3002.0,1,KV Melaka Tengah,KV_ARAB2'26,Encik Farhan
+KV S2 2026,KV_ARAB2'26,,Encik Kamarul,KV Tanjung Puteri,150,5700.0,2,KV Tanjung Puteri,KV_ARAB2'26,Encik Kamarul
+KV S2 2026,KV_ARAB2'25,,Encik Zulhilmi,KV Tanjung Piai,22,836.0,1,KV Tanjung Piai,KV_ARAB2'25,Encik Zulhilmi
+KV S2 2026,KV_ARAB2'26,300-KOPERASI,Encik Zulhilmi,KV Tanjung Piai,22,836.0,1,KV Tanjung Piai,KV_ARAB2'26,Encik Zulhilmi
+KV S2 2026,KV_ARAB2'25,,Puan Aishah,KV Datuk Seri Mohd Zin,60,2280.0,1,KV Datuk Seri Mohd Zin,KV_ARAB2'25,Puan Aishah
+KV S2 2026,KV_ARAB2'26,300-DIRECT,Puan Aishah,KV Datuk Seri Mohd Zin,60,2280.0,1,KV Datuk Seri Mohd Zin,KV_ARAB2'26,Puan Aishah
+KV S2 2026,KV_ARAB2'25,,Puan Asyadah,KV Kota Tinggi,71,2698.0,1,KV Kota Tinggi,KV_ARAB2'25,Puan Asyadah
+KV S2 2026,KV_ARAB2'26,300-KOPERASI,Puan Asyadah,KV Kota Tinggi,71,2698.0,1,KV Kota Tinggi,KV_ARAB2'26,Puan Asyadah
+KV S2 2026,KV_ARAB2'25,,Puan Norfarahin (KOP),KV Segamat,49,1862.0,1,KV Segamat,KV_ARAB2'25,Puan Norfarahin (KOP)
+KV S2 2026,KV_ARAB2'26,300-KOPERASI,Puan Norfarahin (KOP),KV Segamat,49,1862.0,1,KV Segamat,KV_ARAB2'26,Puan Norfarahin (KOP)
+KV S2 2026,KV_ARAB2'25,,Ustazah Irdina,KV Muar,80,3040.0,1,KV Muar,KV_ARAB2'25,Ustazah Irdina
+KV S2 2026,KV_ARAB2'26,300-KOPERASI,Ustazah Irdina,KV Muar,80,3040.0,1,KV Muar,KV_ARAB2'26,Ustazah Irdina
+KV S2 2026,KV_ARAB2'26,,Ustazah Nor Mastura,KV Kluang,260,9880.0,2,KV Kluang,KV_ARAB2'26,Ustazah Nor Mastura
+KV S2 2026,KV_ARAB2'26,,Ustazah Rakiyah,KV Batu Pahat,60,2280.0,2,KV Batu Pahat,KV_ARAB2'26,Ustazah Rakiyah
 STPM P1 2027,SJH1,300-A082,Abd Rashid,Pulau Sebang,11,110.0,1,Pulau Sebang,SJH1,Abd Rashid
 STPM P1 2027,SYARIAH1,300-A141,Cigku Azran,Bandar Tenggara,12,336.0,1,Bandar Tenggara,SYARIAH1,Cigku Azran
 STPM P1 2027,SYARIAH1,300-A136,Cikgu Abdul Aziz,Sultan Muhammad,26,728.0,2,Sultan Muhammad,SYARIAH1,Cikgu Abdul Aziz
